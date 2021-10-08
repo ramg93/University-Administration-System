@@ -347,7 +347,7 @@ def marksheet(student_id):
     return render_template('marksheet.html',
                         courses=courses,
                         id=marksheet.id,
-                        student_id=student_id,
+                        student=student,
                         gpa=gpa,
                         stream=stream,
                         university=university,

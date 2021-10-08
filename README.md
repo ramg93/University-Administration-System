@@ -2,7 +2,9 @@
 
 ## This web application is meant to comprise the functionality for a generic administration system which delves into a database connecting Universities, Colleges, Streams, Students and Courses (with grade). Any given user gets to go throws all records, edit them and / or delete them. As well, a user may add new records, which will be automatically stored into an SQL database furbished and supplied with SQLAlchemy. Finally, a user may run searches across the database throw the app. 
 
-## These three high-level functions are displayed in a navigation bar. 
+## These three high-level functions are displayed in the next video thoroughly.
+
+[![uas](uas.mp4)](uas.mp4)
 
 ## The folder for this application is [UAS_WebApp](UAS_WebApp/); once inside this folder and with a virtual environment with python 3.7 or higher and the required libraries setup, the application runs with the following command line: `python app.py` or `python3 app.py`. If execution is running properly, open your preferred browser on `http://localhost:5000` to interact with frontend.
 
