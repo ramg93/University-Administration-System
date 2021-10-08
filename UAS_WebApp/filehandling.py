@@ -11,12 +11,12 @@ def db2csv():
 
     for table in tables:
         from glob import glob; from os.path import expanduser
-        conn = sqlite3.connect( # open test.db
-            glob(expanduser('test.db'))[0]
+        conn = sqlite3.connect( # open uas.db
+            glob(expanduser('uas.db'))[0]
         )
         cursor = conn.cursor()
         cursor.execute(f"select * from {table};")
-        with open(f"db_filehandling/CSV/{table}_test.csv", "w", newline='') as csv_file:
+        with open(f"db_filehandling/CSV/{table}_uas.csv", "w", newline='') as csv_file:
             csv_writer = csv.writer(csv_file)
             csv_writer.writerow([i[0] for i in cursor.description]) # write headers
             csv_writer.writerows(cursor)
@@ -25,7 +25,7 @@ def db2csv():
 def csv2xlsx():
     folder = 'db_filehandling/CSV/'
     files = [file for file in os.listdir(folder) if '.csv' in file]
-    writer = pd.ExcelWriter('db_filehandling/XLSX/test.xlsx', engine='xlsxwriter')
+    writer = pd.ExcelWriter('db_filehandling/XLSX/uas.xlsx', engine='xlsxwriter')
     for file in files:
         table = pd.read_csv(''.join([folder, file]), encoding='latin1')
         table.to_excel(writer, sheet_name=file.split('_')[0])
