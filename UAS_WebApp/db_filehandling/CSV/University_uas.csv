@@ -1,0 +1,6 @@
+id,created_at,name,location,acronym,address
+1,2021-10-08,Universidad de Buenos Aires,"Buenos Aires, Argentina",UBA,"Viamonte 430, C1053 CABA, Argentina"
+2,2021-10-08,Universidad Nacional Autónoma de México,"Mexico City, Mexico",UNAM,"Av. Universidad 3004, Col, Copilco Universidad, Coyoacán, 04510 Ciudad de México, CDMX"
+3,2021-10-08,Technische Universität München,"Munich, Germany",TUM,"Arcisstraße 21, 80333 München, Alemania"
+4,2021-10-08,大阪大学 (Osaka University),"Osaka, Japan",OU,"1-1 Yamadaoka, Suita,Osaka 565-0871 Japan"
+5,2021-10-08,University of Cape Town,"Western Cape, South Africa",UCT,"Rondebosch, Cape Town, 7700, South Africa"

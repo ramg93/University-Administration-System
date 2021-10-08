@@ -16,7 +16,7 @@ def db2csv():
         )
         cursor = conn.cursor()
         cursor.execute(f"select * from {table};")
-        with open(f"db_filehandling/CSV/{table}_uas.csv", "w", newline='') as csv_file:
+        with open(f"db_filehandling/CSV/{table}_uas.csv", "w", newline='', encoding='utf-8') as csv_file:
             csv_writer = csv.writer(csv_file)
             csv_writer.writerow([i[0] for i in cursor.description]) # write headers
             csv_writer.writerows(cursor)
@@ -27,7 +27,10 @@ def csv2xlsx():
     files = [file for file in os.listdir(folder) if '.csv' in file]
     writer = pd.ExcelWriter('db_filehandling/XLSX/uas.xlsx', engine='xlsxwriter')
     for file in files:
-        table = pd.read_csv(''.join([folder, file]), encoding='latin1')
+        try: 
+            table = pd.read_csv(''.join([folder, file]), encoding='latin1')
+        except UnicodeEncodeError as e:
+            table = pd.read_csv(''.join([folder, file]), encoding='utf-8')
         table.to_excel(writer, sheet_name=file.split('_')[0])
     writer.save()
 
