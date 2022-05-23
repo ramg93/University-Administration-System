@@ -1,6 +1,6 @@
 # University Administration System
 
-## This web application is meant to comprise the functionality for a generic administration system which delves into a database connecting Universities, Colleges, Streams, Students and Courses (with grade). Any given user gets to go throws all records, display extra details, edit them and/or delete them. As well, users may add new records, which will be automatically stored into an SQL database, which is furbished and supplied with SQLAlchemy. Finally, users may run searches across the database throw the app. 
+## This web application is meant to comprise the functionality for a generic administration system which delves into a database connecting Universities, Colleges, Streams, Students and Courses (with grade). Any given user gets to go through all records, display extra details, edit them and/or delete them. As well, users may add new records, which will be automatically stored into an SQL database, which is furbished and supplied with SQLAlchemy. Finally, users may run searches across the database through the app. 
 
 ## These three high-level functions are displayed in the next video thoroughly.
 [<img src="https://img.youtube.com/vi/r23TGx54Vr8/maxresdefault.jpg" width="50%">](https://youtu.be/r23TGx54Vr8)
